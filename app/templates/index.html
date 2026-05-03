@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block title %}Inicio - Gestión del Conocimiento{% endblock %}
+
+{% block content %}
+<div class="hero">
+    <h2>Bienvenido a la Wiki de Gestión del Conocimiento</h2>
+    <p>Sistema centralizado para la documentación y gestión del conocimiento de TI</p>
+</div>
+
+<div class="content-body">
+    {{ content|safe }}
+</div>
+
+<div class="cards-container">
+    <div class="card">
+        <h3>📋 Procedimientos de Red</h3>
+        <p>Documentación de procedimientos estándar para la gestión y operación de la red.</p>
+        <a href="/procedimientos" class="btn">Ver más</a>
+    </div>
+    <div class="card">
+        <h3>⚙️ Scripts</h3>
+        <p>Scripts útiles para la automatización y gestión de tareas de TI.</p>
+        <a href="/scripts" class="btn">Ver más</a>
+    </div>
+    <div class="card">
+        <h3>🔧 Troubleshooting</h3>
+        <p>Soluciones rápidas para problemas comunes en la red y sistemas.</p>
+        <a href="/troubleshooting" class="btn">Ver más</a>
+    </div>
+</div>
+{% endblock %}
